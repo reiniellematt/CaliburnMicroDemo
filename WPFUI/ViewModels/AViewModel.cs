@@ -2,10 +2,6 @@
 using CMTestLibrary;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace WPFUI.ViewModels
 {
@@ -13,7 +9,6 @@ namespace WPFUI.ViewModels
     {
         private List<Person> _people = new List<Person>();
         private Person _selectedPerson = new Person();
-        private string _timeUpdated;
 
         public List<Person> People
         {
@@ -49,24 +44,10 @@ namespace WPFUI.ViewModels
                 return _selectedPerson.LastName;
             }
         }
-        public string TimeUpdated
-        {
-            get { return _timeUpdated; }
-            set
-            {
-                _timeUpdated = value;
-                NotifyOfPropertyChange(() => TimeUpdated);
-            }
-        }
 
         public AViewModel()
         {
             LoadData();
-        }
-
-        public void CheckPerson()
-        {
-            TimeUpdated = DateTime.Now.ToString();
         }
 
         private void LoadData()
