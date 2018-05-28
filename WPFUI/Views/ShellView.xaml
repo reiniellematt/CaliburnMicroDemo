@@ -14,12 +14,14 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="80"/>
             <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="80"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
         <Button x:Name="ShowAView" Grid.Row="0" Grid.Column="0" Content="A View" Margin="8" />
         <Button x:Name="ShowBView" Grid.Row="0" Grid.Column="1" Content="B View" Margin="8" />
+        <Button x:Name="ShowCView" Grid.Row="0" Grid.Column="2" Content="C View" Margin="8"/>
 
-        <ContentControl x:Name="ActiveItem" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" />
+        <ContentControl x:Name="ActiveItem" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" />
     </Grid>
 </Window>

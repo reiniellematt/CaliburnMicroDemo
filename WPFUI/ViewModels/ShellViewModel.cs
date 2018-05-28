@@ -9,11 +9,14 @@ namespace WPFUI.ViewModels
 {
     public class ShellViewModel : Conductor<Screen>
     {
-        private readonly IEventAggregator eventAggregator = new EventAggregator();
-        private readonly IWindowManager windowManager = new WindowManager();
+        private readonly IEventAggregator _eventAggregator;
+        private readonly IWindowManager _windowManager;
 
-        public ShellViewModel()
+        public ShellViewModel(IEventAggregator eventAggregator, IWindowManager windowManager)
         {
+            _eventAggregator = eventAggregator;
+            _windowManager = windowManager;
+
             ActivateItem(new AViewModel());
         }
 
@@ -24,7 +27,12 @@ namespace WPFUI.ViewModels
 
         public void ShowBView()
         {
-            ActivateItem(new BViewModel(eventAggregator, windowManager));
+            ActivateItem(new BViewModel(_eventAggregator, _windowManager));
+        }
+
+        public void ShowCView()
+        {
+            ActivateItem(new CViewModel(_windowManager));
         }
     }
 }

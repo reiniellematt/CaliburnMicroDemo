@@ -72,6 +72,8 @@
     </Compile>
     <Compile Include="ViewModels\AViewModel.cs" />
     <Compile Include="ViewModels\BViewModel.cs" />
+    <Compile Include="ViewModels\CViewModel.cs" />
+    <Compile Include="ViewModels\NewViewModel.cs" />
     <Compile Include="ViewModels\ShellViewModel.cs" />
     <Compile Include="ViewModels\UpdateTimeViewModel.cs" />
     <Compile Include="Views\AView.xaml.cs">
@@ -79,6 +81,12 @@
     </Compile>
     <Compile Include="Views\BView.xaml.cs">
       <DependentUpon>BView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CView.xaml.cs">
+      <DependentUpon>CView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NewView.xaml.cs">
+      <DependentUpon>NewView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ShellView.xaml.cs">
       <DependentUpon>ShellView.xaml</DependentUpon>
@@ -121,6 +129,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\BView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\NewView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
