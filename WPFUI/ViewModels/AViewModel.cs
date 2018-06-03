@@ -1,6 +1,5 @@
 ﻿using Caliburn.Micro;
 using CMTestLibrary;
-using System;
 using System.Collections.Generic;
 
 namespace WPFUI.ViewModels
@@ -19,6 +18,7 @@ namespace WPFUI.ViewModels
                 NotifyOfPropertyChange(() => People);
             }
         }
+
         public Person SelectedPerson
         {
             get { return _selectedPerson; }
@@ -30,6 +30,7 @@ namespace WPFUI.ViewModels
                 NotifyOfPropertyChange(() => LastName);
             }
         }
+
         public string FirstName
         {
             get
@@ -37,6 +38,7 @@ namespace WPFUI.ViewModels
                 return _selectedPerson.FirstName;
             }
         }
+
         public string LastName
         {
             get

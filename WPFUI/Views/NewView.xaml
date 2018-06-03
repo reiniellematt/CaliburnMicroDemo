@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="CView" Height="450" Width="800">
     <StackPanel Margin="12">
-        <TextBlock Text="Thats all. Thanks for your time!" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,48"/>
-        <Button x:Name="CloseApp" Content="Close App" FontSize="24" HorizontalAlignment="Center"  VerticalAlignment="Center" Padding="8"/>
+        <TextBlock Text="Thats all. Thanks for your time!" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,48" />
+        <Button x:Name="CloseApp" Content="Close App" FontSize="24" HorizontalAlignment="Center"  VerticalAlignment="Center" Padding="8" />
     </StackPanel>
 </Window>
